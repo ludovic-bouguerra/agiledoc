@@ -10,5 +10,7 @@ setup(
     url='https://www.agile-doc.com/',
     packages=['agiledoc'],
     test_suite = 'tests',
-
+    entry_points = {
+        'console_scripts': ['agiledoc=agiledoc.app:main'],
+    }
 )
